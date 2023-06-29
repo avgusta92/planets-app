@@ -1,0 +1,22 @@
+<h2 mat-dialog-title>People list:</h2>
+<mat-dialog-content class="mat-typography">
+  <span *ngIf="!data">The residents of this planet are unknown.</span>
+
+  <mat-list *ngIf="data">
+    <mat-list-item *ngFor="let person of data">
+      <span matListItemTitle>{{person.name}}</span>
+      <span matListItemLine>
+        <span>Height:</span>
+        {{person.height}}
+      </span>
+      <span matListItemLine>
+        <span>Birth year:</span>
+        {{person.birth_year}}
+      </span>
+    </mat-list-item>
+  </mat-list>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+</mat-dialog-actions>
