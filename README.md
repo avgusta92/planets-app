@@ -1,6 +1,6 @@
 # PlanetsApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.1.
+[Demo](https://avgusta92.github.io/planets-app/)
 
 ## Development server
 
